@@ -1,12 +1,6 @@
 using UnityEngine;
 
-/// <summary>
-/// Cámara 2D que sigue a un objetivo (el Player) con suavizado.
-/// Incluye offset, adelantamiento en la dirección de movimiento (look ahead)
-/// y límites opcionales para que la cámara no salga del nivel.
-/// Colócalo en la Main Camera y arrastra el Player al campo "Target".
-/// Usa LateUpdate para evitar temblores, ya que el Player se mueve con físicas.
-/// </summary>
+
 [RequireComponent(typeof(Camera))]
 public class CameraFollow : MonoBehaviour
 {
@@ -40,7 +34,7 @@ public class CameraFollow : MonoBehaviour
 
     private void Start()
     {
-        // Arranca ya centrada en el Player, sin "viaje" inicial
+        
         if (target != null)
             transform.position = GetDesiredPosition(0f);
     }
@@ -49,7 +43,7 @@ public class CameraFollow : MonoBehaviour
     {
         if (target == null) return;
 
-        // La escala X del Player es su dirección (1 = derecha, -1 = izquierda)
+       
         if (useLookAhead)
             targetLookAhead = Mathf.Sign(target.localScale.x) * lookAheadDistance;
 
@@ -74,7 +68,7 @@ public class CameraFollow : MonoBehaviour
 
     private Vector3 ClampToBounds(Vector3 pos)
     {
-        // Mitad del tamaño visible de la cámara, para que el borde de la vista respete los límites
+       
         float halfHeight = cam.orthographicSize;
         float halfWidth = halfHeight * cam.aspect;
 
@@ -83,7 +77,7 @@ public class CameraFollow : MonoBehaviour
         float minY = minBounds.y + halfHeight;
         float maxY = maxBounds.y - halfHeight;
 
-        // Si el nivel es más pequeño que la vista, centra la cámara en ese eje
+        
         pos.x = minX > maxX ? (minBounds.x + maxBounds.x) * 0.5f : Mathf.Clamp(pos.x, minX, maxX);
         pos.y = minY > maxY ? (minBounds.y + maxBounds.y) * 0.5f : Mathf.Clamp(pos.y, minY, maxY);
 

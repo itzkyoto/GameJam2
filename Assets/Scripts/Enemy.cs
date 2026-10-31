@@ -1,41 +1,71 @@
 using UnityEngine;
 
-
-public class Enemy : Entity, IMovable
+[RequireComponent(typeof(Collider2D))]
+public abstract class Enemy : Entity, IMovable
 {
-    [SerializeField] private float patrolDistance = 3f;
-    [SerializeField] private int contactDamage = 10;
+    [Header("Enemigo")]
+    [SerializeField] protected int contactDamage = 1;
 
-    private Vector2 startPosition;
-    private float direction = 1f;
+    protected Transform target;
+    protected Collider2D col;
+    protected float facingDirection = 1f;
 
     protected override void Awake()
     {
         base.Awake();
-        startPosition = transform.position;
+        col = GetComponent<Collider2D>();
     }
 
-    private void FixedUpdate()
+    protected virtual void Start()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+            target = player.transform;
+    }
+
+    protected virtual void FixedUpdate()
     {
         if (isDead) return;
 
-        float offset = transform.position.x - startPosition.x;
-        if (Mathf.Abs(offset) >= patrolDistance)
-            direction = -Mathf.Sign(offset);
+        if (target == null || !target.gameObject.activeInHierarchy)
+        {
+            Move(0f);
+            return;
+        }
 
-        Move(direction);
+        Behave();
     }
 
-    public void Move(float dir)
+    protected abstract void Behave();
+
+    protected float HorizontalDistanceToTarget => Mathf.Abs(target.position.x - transform.position.x);
+
+    protected float BodyWidth => col.bounds.size.x;
+
+    protected void FaceTarget()
     {
-        rb.linearVelocity = new Vector2(dir * stats.moveSpeed, rb.linearVelocity.y);
-        transform.localScale = new Vector3(dir, 1f, 1f);
+        float dx = target.position.x - transform.position.x;
+
+        if (dx != 0f)
+            facingDirection = Mathf.Sign(dx);
+
+        transform.localScale = new Vector3(facingDirection, 1f, 1f);
+    }
+
+    public void Move(float direction)
+    {
+        rb.linearVelocity = new Vector2(direction * stats.moveSpeed, rb.linearVelocity.y);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.TryGetComponent<IDamageable>(out var target) && collision.collider.CompareTag("Player"))
-            target.TakeDamage(contactDamage);
+        if (isDead) return;
+
+        if (collision.collider.CompareTag("Player") &&
+            collision.collider.TryGetComponent<IDamageable>(out var victim))
+        {
+            victim.TakeDamage(contactDamage);
+        }
     }
 
     protected override void Die()

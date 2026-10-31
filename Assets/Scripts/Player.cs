@@ -1,12 +1,12 @@
 using UnityEngine;
 
-
 [RequireComponent(typeof(PlayerInputManager))]
 public class Player : Entity, IMovable, IJumper, IShooter
 {
-   
     private const int PlayerHealth = 1;
-    private const float PlayerSpeed = 5f;
+    public const float PlayerSpeed = 5f;
+    public const float BulletSpeed = 18f;
+    public const int BulletDamage = 10;
     private const float AimThreshold = 0.5f;
 
     [Header("Suelo")]
@@ -34,13 +34,12 @@ public class Player : Entity, IMovable, IJumper, IShooter
     private float jumpBufferCounter;
     private bool isGrounded;
 
-    
-
     protected override void Awake()
     {
-        
         stats.maxHealth = PlayerHealth;
         stats.moveSpeed = PlayerSpeed;
+        stats.projectileSpeed = BulletSpeed;
+        stats.damage = BulletDamage;
 
         base.Awake();
     }
@@ -61,8 +60,6 @@ public class Player : Entity, IMovable, IJumper, IShooter
         TryJump();
     }
 
-   
-
     public void SetMoveInput(Vector2 input)
     {
         moveInput = input;
@@ -79,7 +76,6 @@ public class Player : Entity, IMovable, IJumper, IShooter
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * jumpCutMultiplier);
     }
 
-    
     public void OnShootPressed()
     {
         if (isDead) return;
@@ -87,16 +83,12 @@ public class Player : Entity, IMovable, IJumper, IShooter
         Shoot();
     }
 
-
     public void Move(float direction)
     {
         rb.linearVelocity = new Vector2(direction * stats.moveSpeed, rb.linearVelocity.y);
 
-      
         transform.localScale = new Vector3(facingDirection, 1f, 1f);
     }
-
-   
 
     private void CheckGround()
     {
@@ -124,8 +116,6 @@ public class Player : Entity, IMovable, IJumper, IShooter
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, stats.jumpForce);
     }
 
-
-
     public void Shoot()
     {
         if (projectilePrefab == null) return;
@@ -137,7 +127,6 @@ public class Player : Entity, IMovable, IJumper, IShooter
         bullet.Initialize(direction, stats.projectileSpeed, stats.damage, tag);
     }
 
-  
     private Vector2 GetShootDirection()
     {
         if (moveInput.y > AimThreshold)
@@ -160,19 +149,14 @@ public class Player : Entity, IMovable, IJumper, IShooter
         return (Vector2)transform.position + new Vector2(offset.x * facingDirection, offset.y);
     }
 
- 
-
     protected override void Die()
     {
         isDead = true;
         moveInput = Vector2.zero;
         rb.linearVelocity = Vector2.zero;
         Debug.Log("Player murió");
-      
         gameObject.SetActive(false);
     }
-
-  
 
     private void OnDrawGizmosSelected()
     {
