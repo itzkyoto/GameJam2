@@ -28,6 +28,13 @@ public class Skeleton : Enemy, IShooter
 
     protected override void Behave()
     {
+        if (!TargetInRange)
+        {
+            Patrol();
+            return;
+        }
+
+        CancelPatrolPause();
         FaceTarget();
 
         float stopDistance = stopDistanceInBodies * BodyWidth;
@@ -62,8 +69,10 @@ public class Skeleton : Enemy, IShooter
         fireball.Initialize(direction, stats.projectileSpeed, stats.damage, tag);
     }
 
-    private void OnDrawGizmosSelected()
+    protected override void OnDrawGizmosSelected()
     {
+        base.OnDrawGizmosSelected();
+
         Collider2D c = col != null ? col : GetComponent<Collider2D>();
         if (c == null) return;
 

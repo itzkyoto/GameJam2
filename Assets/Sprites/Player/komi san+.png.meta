@@ -1,0 +1,954 @@
+fileFormatVersion: 2
+guid: 0cb837936b0b55b4a8e6def37d7bf7a5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6394847692701329364
+    second: komi san+_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: komi san+_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7603c58101fb850800000000000000
+      internalID: 6394847692701329364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 6516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932f7d01bf26f1544bd222609b5e22f5
+      internalID: -1883559501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 6516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc15fa336d09ae4283b9a68fc7cb253
+      internalID: 547307363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 6516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0526dda4b94406742b3ada80711fd673
+      internalID: -2135504498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 6516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a8ec0dcde5f4a4580b139d96e29136
+      internalID: 1753738345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 6516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d6d5c0c58828f4ebd23de4cfcfbc79
+      internalID: -1572547054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 6516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b499e231ee8b2848a2871c083c04bf4
+      internalID: 1597066810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 6516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b581bb74b5ada747b177bd08137280c
+      internalID: -46741121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_8
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 6516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cead220bc9750ec4b8a202460830e22f
+      internalID: -360980369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6016
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9845e1d003dbe4b8efad2492c06b1f
+      internalID: -1391690175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_10
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 6016
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b55a7f50585b249ba2ebfb3e910cd5
+      internalID: 392804692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_11
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 6016
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4162c2fdef0408e4bb0fc621a1f689e3
+      internalID: 777393903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_12
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 6016
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43fa63bf863cbae4b939ee12b189d6ec
+      internalID: -2109882496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_13
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 6016
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149b4ef7e2b69404a959643c4530270b
+      internalID: -909724371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_14
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 6016
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e46883eabf2ac408029af64e6189dd
+      internalID: 892771725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_15
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 6016
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a203d3e44afa5cd409eb39f7cfe8fb05
+      internalID: -2145612230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_16
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 6016
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf73334f75b666847923495b96b74245
+      internalID: -1059014470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_17
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 6016
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7485e61028184074d98302fb519657b8
+      internalID: 301987821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c73541f5dac634dbf46b23f05a2722
+      internalID: 1632562061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_19
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 5516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219ec7df163786946bab8271afa28762
+      internalID: 498493087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_20
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 5516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dedf6b3635b6bd49a0f38d7351db795
+      internalID: -1787265196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_21
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 5516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31414e77056b7984a86c229b019ca8a6
+      internalID: 1231940525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_22
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 5516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034908a6b140daa48a4ee305c34c4da4
+      internalID: -477310681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_23
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 5516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f738eb4c6845944a9c968c4066d7ce
+      internalID: 195988642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_24
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 5516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5327dd203c7bf49824c093e420a483
+      internalID: 643292747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_25
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 5516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294977e285881bd4498d3f4d5b665322
+      internalID: -389461197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_26
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 5516
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6579b01e897851f4d8d1370319a7102c
+      internalID: 281422006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5016
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf20ccff297f6f4893a069c7f2673be
+      internalID: 1890892435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_28
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 5016
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8356e4b197900498f7b38bc04d7638
+      internalID: -23283506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_29
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 5016
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058f66fa38706744e894e34c2a1f35f1
+      internalID: 1522844423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_30
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 5016
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142d0bd060021de4fb909453109d10a8
+      internalID: 1043213233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komi san+_31
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 5016
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7bb82e97d403d45ae94be15f44a59e
+      internalID: 581213691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 563d07ebbabc9794aaae7bf60f7322d6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":500.0,"y":500.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      komi san+_0: 6394847692701329364
+      komi san+_1: -1883559501
+      komi san+_10: 392804692
+      komi san+_100: 980012802
+      komi san+_101: -1056457456
+      komi san+_102: 281745262
+      komi san+_103: 1795133588
+      komi san+_104: -579122889
+      komi san+_105: -1385251755
+      komi san+_106: 964886964
+      komi san+_107: 1607826891
+      komi san+_108: -1986683865
+      komi san+_109: 709785793
+      komi san+_11: 777393903
+      komi san+_110: -1545787491
+      komi san+_111: -618055766
+      komi san+_112: -565671639
+      komi san+_113: -1558950947
+      komi san+_114: -1250623294
+      komi san+_115: 592324046
+      komi san+_116: -1254902680
+      komi san+_117: -1046969647
+      komi san+_118: 123452219
+      komi san+_119: 401609951
+      komi san+_12: -2109882496
+      komi san+_120: 1083679373
+      komi san+_121: 1524720221
+      komi san+_122: -344345128
+      komi san+_123: -2011323886
+      komi san+_124: 859581548
+      komi san+_125: 1310741037
+      komi san+_13: -909724371
+      komi san+_14: 892771725
+      komi san+_15: -2145612230
+      komi san+_16: -1059014470
+      komi san+_17: 301987821
+      komi san+_18: 1632562061
+      komi san+_19: 498493087
+      komi san+_2: 547307363
+      komi san+_20: -1787265196
+      komi san+_21: 1231940525
+      komi san+_22: -477310681
+      komi san+_23: 195988642
+      komi san+_24: 643292747
+      komi san+_25: -389461197
+      komi san+_26: 281422006
+      komi san+_27: 1890892435
+      komi san+_28: -23283506
+      komi san+_29: 1522844423
+      komi san+_3: -2135504498
+      komi san+_30: 1043213233
+      komi san+_31: 581213691
+      komi san+_32: -2059902242
+      komi san+_33: 1919061887
+      komi san+_34: 1129164105
+      komi san+_35: -266009285
+      komi san+_36: -349389662
+      komi san+_37: -759613703
+      komi san+_38: 345491336
+      komi san+_39: -491452588
+      komi san+_4: 1753738345
+      komi san+_40: 508018086
+      komi san+_41: -538006233
+      komi san+_42: 1351042186
+      komi san+_43: 1307054909
+      komi san+_44: -1663487100
+      komi san+_45: 565601924
+      komi san+_46: 703409482
+      komi san+_47: 1562998923
+      komi san+_48: -1810986172
+      komi san+_49: 1206421294
+      komi san+_5: -1572547054
+      komi san+_50: -358234033
+      komi san+_51: -716318566
+      komi san+_52: 1608400964
+      komi san+_53: -236794089
+      komi san+_54: 878873051
+      komi san+_55: -1927275745
+      komi san+_56: 960442672
+      komi san+_57: 1002009219
+      komi san+_58: -450811876
+      komi san+_59: -1461934980
+      komi san+_6: 1597066810
+      komi san+_60: 546657471
+      komi san+_61: -2068160627
+      komi san+_62: 83439596
+      komi san+_63: -452331858
+      komi san+_64: -876778348
+      komi san+_65: -544594988
+      komi san+_66: -718026549
+      komi san+_67: 1446596324
+      komi san+_68: -158481441
+      komi san+_69: 861375801
+      komi san+_7: -46741121
+      komi san+_70: -51837409
+      komi san+_71: -1580632046
+      komi san+_72: -1671661267
+      komi san+_73: 1460530468
+      komi san+_74: 1698800459
+      komi san+_75: 1917233516
+      komi san+_76: -520406676
+      komi san+_77: 1682095230
+      komi san+_78: -1623351746
+      komi san+_79: 1935629776
+      komi san+_8: -360980369
+      komi san+_80: -1896098319
+      komi san+_81: 1902295298
+      komi san+_82: 2082397667
+      komi san+_83: 1695530404
+      komi san+_84: -900749595
+      komi san+_85: 1172146400
+      komi san+_86: -750949831
+      komi san+_87: 295794786
+      komi san+_88: -1398498539
+      komi san+_89: 2014839112
+      komi san+_9: -1391690175
+      komi san+_90: 1324512368
+      komi san+_91: 190274490
+      komi san+_92: -593500388
+      komi san+_93: -45172059
+      komi san+_94: 997375807
+      komi san+_95: -783060176
+      komi san+_96: 799724628
+      komi san+_97: 1958815357
+      komi san+_98: 1597073073
+      komi san+_99: -877615561
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
