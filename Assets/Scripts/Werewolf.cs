@@ -17,6 +17,10 @@ public class Werewolf : Enemy, IShooter, IJumper
     [Header("Punto de salida de los proyectiles (X se invierte según hacia dónde mira)")]
     [SerializeField] private Vector2 fireOffset = new Vector2(0.6f, 0.2f);
 
+    [Header("Sonidos del licántropo")]
+    [SerializeField] private AudioClip shootSound;
+    [SerializeField] private AudioClip jumpSound;
+
     [Header("Salto")]
     [SerializeField] private float jumpCheckDistance = 0.4f;
     [SerializeField] private float jumpCooldown = 0.4f;
@@ -122,6 +126,7 @@ public class Werewolf : Enemy, IShooter, IJumper
 
     public void Jump()
     {
+        AudioManager.Play(jumpSound);
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, stats.jumpForce);
     }
 
@@ -131,6 +136,8 @@ public class Werewolf : Enemy, IShooter, IJumper
 
         Vector2 direction = Vector2.right * facingDirection;
         Vector2 origin = (Vector2)transform.position + new Vector2(fireOffset.x * facingDirection, fireOffset.y);
+
+        AudioManager.Play(shootSound);
 
         Projectile bullet = Instantiate(projectilePrefab, origin, Quaternion.identity);
         bullet.Initialize(direction, stats.projectileSpeed, stats.damage, tag);

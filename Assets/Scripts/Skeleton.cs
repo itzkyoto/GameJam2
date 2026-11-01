@@ -11,6 +11,9 @@ public class Skeleton : Enemy, IShooter
     [SerializeField] private float stopDistanceInBodies = 5f;
     [SerializeField] private float fireInterval = 1.5f;
 
+    [Header("Sonidos del esqueleto")]
+    [SerializeField] private AudioClip fireballSound;
+
     [Header("Punto de salida de la bola (X se invierte según hacia dónde mira)")]
     [SerializeField] private Vector2 fireOffset = new Vector2(0.6f, 0.2f);
 
@@ -64,6 +67,8 @@ public class Skeleton : Enemy, IShooter
 
         Vector2 direction = Vector2.right * facingDirection;
         Vector2 origin = (Vector2)transform.position + new Vector2(fireOffset.x * facingDirection, fireOffset.y);
+
+        AudioManager.Play(fireballSound);
 
         Projectile fireball = Instantiate(fireballPrefab, origin, Quaternion.identity);
         fireball.Initialize(direction, stats.projectileSpeed, stats.damage, tag);

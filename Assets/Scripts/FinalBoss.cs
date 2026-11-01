@@ -24,6 +24,14 @@ public class FinalBoss : Enemy, IShooter, IMeleeAttacker
     [Header("Sablazo")]
     [SerializeField] private GameObject slashEffect;
 
+    [Header("Sonidos del jefe")]
+    [SerializeField] private AudioClip shootSound;
+    [SerializeField] private AudioClip slashSound;
+    [SerializeField] private AudioClip teleportSound;
+
+    [Header("Teletransporte: validación")]
+    [SerializeField] private bool requireGroundBelow = false;
+
     private bool isAttacking;
 
     protected override void Awake()
@@ -108,6 +116,8 @@ public class FinalBoss : Enemy, IShooter, IMeleeAttacker
 
             if (!IsValidTeleportPoint(candidate)) continue;
 
+            AudioManager.Play(teleportSound);
+
             transform.position = candidate;
             rb.position = candidate;
             rb.linearVelocity = Vector2.zero;
@@ -128,6 +138,8 @@ public class FinalBoss : Enemy, IShooter, IMeleeAttacker
         bool blocked = Physics2D.OverlapBox(center, b.size * 0.95f, 0f, obstacleLayer) != null;
         if (blocked) return false;
 
+        if (!requireGroundBelow) return true;
+
         return Physics2D.Raycast(center, Vector2.down, b.extents.y + 1f, obstacleLayer).collider != null;
     }
 
@@ -146,6 +158,8 @@ public class FinalBoss : Enemy, IShooter, IMeleeAttacker
         Bounds b = col.bounds;
         float muzzleDistance = Mathf.Max(b.extents.x, b.extents.y) + 0.2f;
 
+        AudioManager.Play(shootSound);
+
         Projectile bullet = Instantiate(projectilePrefab, position + direction * muzzleDistance, Quaternion.identity);
         bullet.Initialize(direction, stats.projectileSpeed, stats.damage, tag);
     }
@@ -161,6 +175,8 @@ public class FinalBoss : Enemy, IShooter, IMeleeAttacker
     private IEnumerator SlashRoutine()
     {
         bool hasHit = false;
+
+        AudioManager.Play(slashSound);
 
         if (slashEffect != null)
             slashEffect.SetActive(true);

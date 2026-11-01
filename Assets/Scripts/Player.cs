@@ -22,6 +22,10 @@ public class Player : Entity, IMovable, IJumper, IShooter
     [Header("Disparo")]
     [SerializeField] private Projectile projectilePrefab;
 
+    [Header("Sonidos del Player")]
+    [SerializeField] private AudioClip shootSound;
+    [SerializeField] private AudioClip jumpSound;
+
     [Header("Punto de salida de la bala (offset desde el Player; la X se invierte según hacia dónde mira)")]
     [SerializeField] private Vector2 forwardOffset = new Vector2(0.6f, 0.1f);
     [SerializeField] private Vector2 backOffset = new Vector2(-0.6f, 0.1f);
@@ -113,6 +117,7 @@ public class Player : Entity, IMovable, IJumper, IShooter
 
     public void Jump()
     {
+        AudioManager.Play(jumpSound);
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, stats.jumpForce);
     }
 
@@ -122,6 +127,8 @@ public class Player : Entity, IMovable, IJumper, IShooter
 
         Vector2 direction = GetShootDirection();
         Vector2 origin = GetShotOrigin(direction);
+
+        AudioManager.Play(shootSound);
 
         Projectile bullet = Instantiate(projectilePrefab, origin, Quaternion.identity);
         bullet.Initialize(direction, stats.projectileSpeed, stats.damage, tag);

@@ -10,6 +10,9 @@ public class Pumpkin : Enemy, IShooter, IFlyer
     [SerializeField] private Projectile projectilePrefab;
     [SerializeField] private float hoverDistanceInBodies = 4f;
 
+    [Header("Sonidos de la calabaza")]
+    [SerializeField] private AudioClip shootSound;
+
     [Header("Flotación")]
     [SerializeField] private float bobAmplitude = 0.2f;
     [SerializeField] private float bobFrequency = 0.8f;
@@ -140,6 +143,8 @@ public class Pumpkin : Enemy, IShooter, IFlyer
 
         Bounds b = col.bounds;
         float muzzleDistance = Mathf.Max(b.extents.x, b.extents.y) + 0.2f;
+
+        AudioManager.Play(shootSound);
 
         Projectile bullet = Instantiate(projectilePrefab, position + direction * muzzleDistance, Quaternion.identity);
         bullet.Initialize(direction, stats.projectileSpeed, stats.damage, tag);
